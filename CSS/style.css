@@ -116,7 +116,7 @@
 }
 
 .sectionDos {
-    background-image: url(/img/imgHome/ricardoP.svg);
+    background-image: url(img/imgHome/ricardoP.svg);
 
 }
 
@@ -323,6 +323,42 @@
 }
 
 
+.UnlimitedPower {
+    margin-top: 50px;
+    background-color: #02382E;
+    border-radius: 25px;
+}
+
+
+.contactBox {
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 25px;
+    color: #ffffff !important;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.SendContact {
+    background-color: #00F77B !important;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+}
+
+.SendContact button {
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 16px;
+    color: #090909 !important;
+    padding: 5px;
+}
+
+
+
 /* Responsive + NavBar */
 
 /* Desktop*/
@@ -498,6 +534,23 @@
     .sectionCinco {
         margin-top: 10px;
     }
+
+    .UnlimitedPower {
+        flex-wrap: wrap;
+    }
+
+    .unlimitImg {
+        margin-top: 25px;
+    }
+
+    .contactBox {
+        font-size: 16px;
+        
+    }
+
+    .unlimitImg {
+        max-width: 70% !important;
+    }
 }
 
 /* Mobil */
@@ -594,6 +647,14 @@
         font-weight: 400 !important;
         font-size: 15px !important;
     }
+
+    .unlimitImg {
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+        max-width: 400px !important;
+    }
+
 }
 
 @media screen and (max-width: 393px) {
