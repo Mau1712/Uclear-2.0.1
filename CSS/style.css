@@ -173,7 +173,7 @@
     border-radius: 40px;
     background-color: #DDFFA4;
     max-width: 68% !important;
-    
+
 }
 
 .uCanTrust h3 {
@@ -187,7 +187,7 @@
 
 .TRUST-US {
     font-weight: 600 !important;
-    color: #02382E !important;  
+    color: #02382E !important;
     padding-top: 0px !important;
 }
 
@@ -249,6 +249,80 @@
     margin-top: 85px;
 }
 
+.sectionCinco {
+    margin-top: 150px;
+    position: relative;
+}
+
+.timeline {
+    margin-top: 50px;
+}
+
+.buttonEligible {
+    position: absolute;
+    bottom: 10.5%;
+    right: 42.5%;
+
+    background-color: #00F77B;
+    border-radius: 10px;
+    max-width: 250px !important;
+    text-align: center;
+    padding: 15px;
+}
+
+.buttonEligible a {
+    text-decoration: none;
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 200 !important;
+    font-style: normal !important;
+    font-size: 35px;
+    color: #090909 !important;
+    padding: 5px;
+}
+
+.buttonEligible:hover {
+    background-color: #02382E;
+}
+
+.buttonEligible a:hover {
+    color: #00F77B !important;
+}
+
+.faqsTxt {
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 35px;
+    color: #02382E !important;
+    padding: 5px;
+}
+
+.accordion-item {
+    background-color: #00f77c71 !important;
+
+}
+
+.accordion-button {
+    background-color: #C9FBE2 !important;
+
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 35px;
+    color: #02382E !important;
+    padding: 5px;
+}
+
+.accordion-body {
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 20px;
+    color: #02382E !important;
+    padding: 5px;
+}
+
+
 /* Responsive + NavBar */
 
 /* Desktop*/
@@ -286,6 +360,12 @@
     .becomeButton a {
         font-size: 20px;
         padding: 15px;
+    }
+
+    .buttonEligible {
+        position: absolute;
+        bottom: 10.5%;
+        right: 40.5%;
     }
 }
 
@@ -328,6 +408,12 @@
     .uCanTrust h3 {
         font-size: 40px;
         padding-top: 30px;
+    }
+
+    .buttonEligible {
+        position: absolute;
+        bottom: 9.5%;
+        right: 36.5%;
     }
 }
 
@@ -398,7 +484,19 @@
 
     .boxUcanTrust {
         max-width: 80% !important;
-        
+
+    }
+
+    .buttonEligible {
+        position: absolute;
+        bottom: 9%;
+        right: 33%;
+
+        padding: 1%;
+    }
+
+    .sectionCinco {
+        margin-top: 10px;
     }
 }
 
@@ -457,7 +555,7 @@
     }
 
     .uCanTrust {
-        margin-top: 10px;        
+        margin-top: 10px;
     }
 
     .boxUcanTrust {
@@ -482,6 +580,18 @@
 
     .slideHome {
         margin-top: 50px;
+    }
+
+    .buttonEligible {
+        position: absolute;
+        bottom: 9%;
+        right: 34.5%;
+
+        padding: 1% !important;
+    }
+
+    .buttonEligible a {
+        font-size: 20px;
     }
 }
 
@@ -509,6 +619,15 @@
         top: 91% !important;
         left: 7% !important;
     }
+
+    .buttonEligible {
+        position: absolute;
+        bottom: 8.5%;
+        right: 33%;
+
+        padding: 1% !important;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
