@@ -490,7 +490,7 @@
     .buttonEligible {
         position: absolute;
         bottom: 9%;
-        right: 33%;
+        right: 35.5%;
 
         padding: 1%;
     }
@@ -502,7 +502,7 @@
 
 /* Mobil */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 470px) {
     .portadaTablet {
         display: none !important;
     }
@@ -584,14 +584,15 @@
 
     .buttonEligible {
         position: absolute;
-        bottom: 9%;
-        right: 34.5%;
+        bottom: 10%;
+        right: 37%;
 
         padding: 1% !important;
     }
 
     .buttonEligible a {
-        font-size: 20px;
+        font-weight: 400 !important;
+        font-size: 15px !important;
     }
 }
 
@@ -620,12 +621,19 @@
         left: 7% !important;
     }
 
+
     .buttonEligible {
         position: absolute;
-        bottom: 8.5%;
-        right: 33%;
+        bottom: 9%;
+        right: 38.5%;
 
         padding: 1% !important;
+    }
+
+    .buttonEligible a {
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        font-weight: 100;
     }
 
 }
