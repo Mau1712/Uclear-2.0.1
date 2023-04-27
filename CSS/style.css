@@ -64,6 +64,10 @@
     display: none !important;
 }
 
+.slideHomeMobile {
+    display: none !important;
+}
+
 .navbar-nav {
     font-family: quiet-sans, sans-serif !important;
     font-weight: 400 !important;
@@ -210,7 +214,7 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .tittleSecCuatroUno {
@@ -247,13 +251,13 @@
 }
 
 .slideHome {
-    max-width: 40% !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
-    margin-top: 50px !important;
+    margin-top: 10px !important;
 }
 
 .sectionCinco {
-    margin-top: 150px;
+    margin-top: 0px;
     position: relative;
 }
 
@@ -812,10 +816,18 @@
         max-width: 90% !important;
         margin: 0 auto !important;
         margin-top: 50px !important;
+
+        display: none !important;
     }
 
+    .slideHomeMobile {
+        display:block !important;
+        margin: 0 auto !important;
+        margin-top: 50px !important;
+    }
     
 }
+    
 
 /* Mobil */
 
