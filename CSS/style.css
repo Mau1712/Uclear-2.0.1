@@ -251,7 +251,7 @@
 }
 
 .slideHome {
-    max-width: 100% !important;
+    max-width: 0% !important;
     margin: 0 auto !important;
     margin-top: 10px !important;
 }
@@ -345,6 +345,11 @@
     padding-inline: 25px !important;
     padding-block: 25px !important;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: end !important;
+    align-items: start;
+    padding-left: 50px !important;
 
 }
 
@@ -355,6 +360,7 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
+    
 }
 
 .imgUnlimit img {
@@ -935,6 +941,7 @@
         max-width: 400px !important;
     }
 
+    
 }
 
 @media screen and (max-width: 393px) {
