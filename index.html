@@ -36,22 +36,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link text-fluid" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Partners
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Technicalities</a></li>
-                                <li><a class="dropdown-item" href="#">Shape Memory Technology</a></li>
-                                <!-- <li><hr class="dropdown-divider"></li> -->
-                                <!-- <li><a class="dropdown-item" href="#">Shape Memory Technology</a></li> -->
-                            </ul>
+                            <a class="nav-link" href="#">Partners</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Locations</a>
@@ -138,7 +126,7 @@
             </div>
         </div>
 
-        <!-- <div class="container slideHome">
+        <div class="container slideHome">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
@@ -168,7 +156,7 @@
                     <a class="visually-hidden">Next</a>
                 </button>
             </div>
-        </div> -->
+        </div>
     </section>
 
     <section class="sectionCinco">
@@ -350,35 +338,25 @@
 
 
     <section class="sectionUnlimit container">
-        <div class="UnlimitedPower container d-flex">
-            <div class="container contactBox">
+        <div class="row">
+            <div class="col-md-6 contenidoUnlimit">
                 <h4>Subscribe</h4>
                 <p>
                     Join our newsletter & stay up to date on sales, new features, products, success stories,
-                    recommendations
-                    & much more!
+                    recommendations & much more!
                 </p>
-
-                <form class="contact" method="post" action="mailto:abatantuono1712@gmail.com" enctype="text/plain">
+                <form class="contact" method="post" action="mailto:midadevs@gmail.com" enctype="text/plain">
                     <div class="form-group">
-                      <label for="inputEmail">Enter your email:</label>
-                      <input type="email" class="form-control" id="inputEmail" name="email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your mail"
+                            name="email">
                     </div>
-                    <div class="form-group">
-                      <label for="inputMessage">Message:</label>
-                      <textarea class="form-control" id="inputMessage" name="message"></textarea>
-                    </div>
-                    <div class="SendContact d-flex">
-                        <button type="submit" class="btn">Send</button>
-                    </div>
-                  </form>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
             </div>
-
-            <div class="container d-flex justify-content-center unlimitImg">
-                <img class="align-self-center img-fluid w-50" src="img/imgHome/unlimit.svg" alt="">
+            <div class="col-md-6 imgUnlimit">
+                <img src="img/imgHome/unlimit.svg" alt="">
             </div>
         </div>
-
     </section>
 
 

@@ -18,19 +18,19 @@
 #navbarSupportedContent {
     margin-right: 260px !important;
     margin-left: 230px !important;
-    margin-top: 25px !important;
+    margin-top: 5px !important;
 }
 
 .logoDesktop {
-    max-width: 140px;
-    margin-left: 10px;
+    max-width: 250px !important;
+    margin-left: 150px !important;
 }
 
 /* Book Appoiment Button */
 
 .bookAppoiment {
     background-color: #02382E;
-    border-radius: 20px;
+    border-radius: 40px;
     max-width: 150px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -69,6 +69,7 @@
     font-weight: 400 !important;
     font-style: normal !important;
     color: #090909 !important;
+    align-items: center;
 }
 
 /* SECTION #1 */
@@ -115,10 +116,10 @@
     text-align: center;
 }
 
-.sectionDos {
+/* .sectionDos {
     background-image: url(img/imgHome/ricardoP.svg);
 
-}
+} */
 
 .contenidoSectionDos {
     display: flex;
@@ -224,7 +225,7 @@
     font-weight: 800;
     font-style: normal !important;
     color: #00F77B;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 .tittleSecCuatroUno .tittleFeatures {
@@ -233,7 +234,7 @@
     font-weight: 600;
     font-style: normal !important;
     color: #02382E;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 .tittleSecCuatroDos h3 {
@@ -242,11 +243,13 @@
     font-weight: 600;
     font-style: normal !important;
     color: #02382E;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 .slideHome {
-    margin-top: 85px;
+    max-width: 40% !important;
+    margin: 0 auto !important;
+    margin-top: 50px !important;
 }
 
 .sectionCinco {
@@ -322,39 +325,61 @@
     padding: 5px;
 }
 
-
-.UnlimitedPower {
-    margin-top: 50px;
+.sectionUnlimit {
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
     background-color: #02382E;
-    border-radius: 25px;
+    color: white;
+    border-radius: 50px;
+    margin-top: 25px;
+
+    max-width: 85% !important;
 }
 
+.contenidoUnlimit {
+    padding-inline: 25px !important;
+    padding-block: 25px !important;
 
-.contactBox {
-    font-family: quiet-sans, sans-serif !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
-    font-size: 25px;
-    color: #ffffff !important;
-    padding: 10px;
-    margin-top: 5px;
+
 }
 
-.SendContact {
+.imgUnlimit {
+    background-size: cover;
+    background-position: center;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.imgUnlimit img {
+    max-width: 200px;
+}
+
+.contact {
+    display: flex;
+    align-items: end;
+}
+
+.contact .form-group input {
+    background-color: #02382E;
+    border: solid 2px #C9FBE2;
+    ;
+    border-radius: 25px !important;
+
+}
+
+.contact .form-group input::placeholder {
+    color: #ffffff73;
+}
+
+.contact button {
+    margin-left: 10px;
+    border-radius: 25px !important;
     background-color: #00F77B !important;
-    justify-content: center;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border-radius: 15px;
-}
-
-.SendContact button {
-    font-family: quiet-sans, sans-serif !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
-    font-size: 16px;
-    color: #090909 !important;
-    padding: 5px;
+    color: #090909;
+    border-color: #00F77B;
 }
 
 
@@ -362,9 +387,107 @@
 /* Responsive + NavBar */
 
 /* Desktop*/
+
+@media screen and (max-width: 2305px) {
+    .logoDesktop {
+        max-width: 350px !important;
+        margin-left: 450px !important;
+    }
+
+    #navbarSupportedContent {
+        margin-right: 340px !important;
+        margin-left: 300px !important;
+        margin-top: 15px !important;
+    }
+
+    .sectionUnlimit {
+        max-width: 57% !important;
+        border-radius: 40px;
+    }
+
+    .buttonEligible {
+        bottom: 11%;
+        right: 44.7%;
+
+        padding: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 1920px) {
+    .logoDesktop {
+        max-width: 300px;
+        margin-left: 230px !important;
+    }
+
+    .bookAppoiment {
+        max-width: 300px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        padding: 10px;
+
+    }
+
+    .bookAppoimentTxt {
+        font-size: 20px !important;
+    }
+
+    #navbarSupportedContent {
+        margin-right: 290px !important;
+        margin-left: 260px !important;
+        margin-top: 15px !important;
+    }
+
+    .navbar-nav {
+        font-size: 25px !important;
+    }
+
+    .buttonEligible {
+        bottom: 11%;
+        right: 43.7%;
+
+        padding: 10px;
+    }
+
+    .sectionUnlimit {
+        max-width: 65% !important;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .logoDesktop {
+        margin-left: 170px !important;
+    }
+
+    #navbarSupportedContent {
+        margin-right: 240px !important;
+        margin-left: 210px !important;
+        margin-top: 15px !important;
+    }
+
+    .bookAppoiment {
+        max-width: 300px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .bookAppoimentTxt {
+        font-size: 15px !important;
+    }
+
+    .buttonEligible {
+        position: absolute;
+        bottom: 11%;
+        right: 43%;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     #navbarSupportedContent {
-        margin-right: 190px !important;
+        margin-right: 195px !important;
         margin-left: 170px !important;
         margin-top: 20px;
     }
@@ -399,9 +522,110 @@
     }
 
     .buttonEligible {
-        position: absolute;
-        bottom: 10.5%;
-        right: 40.5%;
+        bottom: 11%;
+        right: 42%;
+    }
+
+    .logoDesktop {
+        max-width: 200px !important;
+        margin-left: 200px !important;
+    }
+
+    .navbar-nav {
+        font-size: 15px !important;
+    }
+
+    .bookAppoimentTxt {
+        font-size: 15px !important;
+    }
+
+    .bookAppoiment {
+        padding: 0px;
+        margin-top: 10px !important;
+    }
+
+    .titleIndex h3 {
+        font-size: 40px;
+    }
+
+    .titleIndex h4 {
+        font-size: 40px;
+
+        text-align: center;
+    }
+
+    .boxTxtOrtodoncia p {
+        font-size: 25px !important;
+    }
+
+    .boxImgOrtodoncia {
+        max-width: 50%;
+    }
+
+    .uCanTrust h3 {
+        font-size: 35px;
+        padding-top: 30px;
+    }
+
+    .licencias img {
+        max-width: 180px;
+        padding: 35px;
+    }
+
+    .boxUcanTrust {
+        max-width: 80% !important;
+    }
+
+    .tittleSecCuatroUno h3 {
+        font-size: 40px !important;
+    }
+
+    .tittleSecCuatroDos h3 {
+        font-size: 40px !important;
+    }
+
+    .timeline {
+        margin-top: 10%;
+    }
+
+    .sectionUnlimit {
+        max-width: 80% !important;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    .licencias img {
+        max-width: 150px;
+        padding: 35px;
+    }
+
+    .tittleSecCuatroUno h3 {
+        font-size: 40px !important;
+    }
+
+    .tittleSecCuatroDos h3 {
+        font-size: 40px !important;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .licencias img {
+        max-width: 130px;
+        padding: 30px;
+    }
+
+    .tittleSecCuatroUno h3 {
+        font-size: 35px !important;
+    }
+
+    .tittleSecCuatroDos h3 {
+        font-size: 35px !important;
+    }
+
+    .logoDesktop {
+        max-width: 200px !important;
+        margin-left: 135px !important;
     }
 }
 
@@ -447,9 +671,37 @@
     }
 
     .buttonEligible {
-        position: absolute;
         bottom: 9.5%;
         right: 36.5%;
+    }
+
+    .sectionUnlimit {
+        max-width: 90% !important;
+    }
+
+    /* .bookAppoimentTxt {
+        margin-top: 5px;
+    } */
+}
+
+@media screen and (max-width: 1024px) {
+    .bookAppoimentTxt {
+        margin-top: 5px !important;
+    }
+
+    .logoDesktop {
+        max-width: 170px !important;
+        margin-left: 80px !important;
+    }
+
+    .slideHome {
+        max-width: 60% !important;
+        margin: 0 auto !important;
+        margin-top: 50px !important;
+    }
+
+    .sectionCinco {
+        margin-top: 20px;
     }
 }
 
@@ -464,8 +716,8 @@
     }
 
     .logoMobile {
-        max-width: 140px;
-        margin-right: 110px;
+        max-width: 180px;
+        margin-right: 260px;
         margin-top: 25px;
     }
 
@@ -483,13 +735,21 @@
 
     #navbarSupportedContent {
         margin-right: 0px !important;
-        margin-left: 25px !important;
+        margin-left: 10px !important;
         margin-top: 0px !important;
     }
 
-    .navbar-toggler {
-        margin-left: 25px;
-        margin-top: 25px;
+    .nav-item {
+        margin-right: 750px;
+    }
+
+    .nav-item {
+        display: flex !important;
+        justify-content: start !important;
+    }
+
+    .bookAppoiment {
+        max-width: 140px;
     }
 
     .portadaTablet {
@@ -539,18 +799,22 @@
         flex-wrap: wrap;
     }
 
-    .unlimitImg {
-        margin-top: 25px;
-    }
-
     .contactBox {
         font-size: 16px;
-        
+
     }
 
     .unlimitImg {
         max-width: 70% !important;
     }
+
+    .slideHome {
+        max-width: 90% !important;
+        margin: 0 auto !important;
+        margin-top: 50px !important;
+    }
+
+    
 }
 
 /* Mobil */
@@ -592,6 +856,10 @@
     .contenidoSectionDos {
         flex-wrap: wrap;
         margin-top: 25px;
+    }
+
+    .boxImgOrtodoncia {
+        max-width: 100%;
     }
 
     .becomeButton {
@@ -682,7 +950,6 @@
         left: 7% !important;
     }
 
-
     .buttonEligible {
         position: absolute;
         bottom: 9%;
@@ -716,7 +983,6 @@
         margin-top: 0px !important;
     }
 }
-
 
 @media screen and (max-width: 360px) {
     .logoMobile {
