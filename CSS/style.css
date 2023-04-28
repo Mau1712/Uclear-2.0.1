@@ -121,7 +121,7 @@
 }
 
 .contenidoSectionDos {
-    margin-top: 50px ;
+    margin-top: 50px;
 }
 
 
@@ -337,7 +337,7 @@
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    
+
 }
 
 .imgUnlimit img {
@@ -394,7 +394,7 @@
         max-width: 280px !important;
         margin-left: 340px !important;
     }
-    
+
 
     #navbarSupportedContent {
         margin-right: 290px !important;
@@ -426,7 +426,7 @@
         margin-left: 210px !important;
         margin-top: 15px !important;
     }
-    
+
     .licencias img {
         max-width: 120px !important;
     }
@@ -557,7 +557,7 @@
 }
 
 /* Laptop */
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
 
     #navbarSupportedContent {
         margin-right: 140px !important;
@@ -574,7 +574,7 @@
         padding: 4px;
         margin-top: 50px;
     }
-    
+
     .licencias img {
         max-width: 100px !important;
         padding: 20px;
@@ -642,7 +642,7 @@
 
 
     }
-    
+
     .portadaTablet {
         width: 100%;
     }
@@ -724,7 +724,7 @@
         max-width: 90% !important;
     }
 }
-    
+
 
 /* Mobil */
 
@@ -753,28 +753,54 @@
 
     .menuMobile-scroll {
         background-color: #65e9a4;
-      }
+    }
 
-      .menuMobile {
+    .menuMobile {
         width: 100% !important;
-      } 
+    }
 
-      .offcanvas-header {
+    .offcanvas-header {
         background-color: #33f896 !important;
-      }
+    }
 
-      .offcanvas-body {
+    .offcanvas-body {
         background-color: #02382E !important;
-      }
+    }
 
-      .offcanvas-body P {
+    .offcanvas-body P {
         color: #C9FBE2;
-      }
+    }
 
-      .imgOpenOffCanva {
+    .navMenuMobil {
+        list-style: none !important;
+
+        flex-direction: column;
+        padding: 0%;
+        
+    }
+
+    .navMenuMobil li {
+        margin: 10px;
+        background-color: #00F77B;
+        max-width: 20%; 
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .navMenuMobil li a {
+        text-decoration: none;
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        color: #02382E !important;
+        padding: 5px;
+        
+    }
+
+    .imgOpenOffCanva {
         max-width: 150px !important;
-      }
-    
+    }
+
 
     .portadaTablet {
         display: none !important;
@@ -853,7 +879,7 @@
 
     .sectionUnlimit {
         max-width: 93% !important;
-    } 
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -924,6 +950,7 @@
         margin-left: 5px !important;
         margin-top: 0px !important;
     }
+
 }
 
 @media screen and (max-width: 360px) {
