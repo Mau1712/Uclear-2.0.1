@@ -784,6 +784,7 @@
         background-color: #00F77B;
         max-width: 20%; 
         text-align: center;
+        border: solid 3px c;
         border-radius: 40px;
     }
 
