@@ -389,6 +389,20 @@
 }
 
 
+@media screen and (max-width: 2050px) {
+    #navbarSupportedContent {
+        margin-right: 290px !important;
+        margin-left: 260px !important;
+        margin-top: 15px !important;
+    }
+
+    .logoDesktop {
+        max-width: 280px !important;
+        margin-left: 390px !important;
+    }
+}
+
+
 @media screen and (max-width: 1920px) {
     .logoDesktop {
         max-width: 280px !important;
@@ -733,12 +747,16 @@
         display: none !important;
     }
 
+    .sectionUno {
+        margin-top: 10px;
+    }
 
     /* MENU MOBILE */
     .menuMobile {
         display: block !important;
 
         position: fixed !important;
+        top: 0%;
         z-index: 100 !important;
     }
 
@@ -776,13 +794,13 @@
 
         flex-direction: column;
         padding: 0%;
-        
+
     }
 
     .navMenuMobil li {
         margin: 10px;
         background-color: #00F77B;
-        max-width: 20%; 
+        max-width: 20%;
         text-align: center;
         border: solid 3px c;
         border-radius: 40px;
@@ -795,7 +813,7 @@
         font-style: normal !important;
         color: #02382E !important;
         padding: 5px;
-        
+
     }
 
     .imgOpenOffCanva {
@@ -971,3 +989,21 @@
         margin-top: 0px !important;
     }
 }
+
+Posicionamiento general del footer
+footer {
+    background-image: url('/img/imgHome/footer_desktop.svg');
+  background-size: cover; /* prueba con '100% 100%' si 'cover' no funciona */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Contenedor del footer */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
