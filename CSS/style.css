@@ -388,6 +388,15 @@
     }
 }
 
+@media screen and (max-width: 2304px) {
+    .buttonEligible {
+        bottom: 12.5%;
+        right: 46.9%;
+
+        padding: 10px;
+    }
+}
+
 
 @media screen and (max-width: 2050px) {
     #navbarSupportedContent {
@@ -990,20 +999,117 @@
     }
 }
 
-Posicionamiento general del footer
-footer {
-    background-image: url('/img/imgHome/footer_desktop.svg');
-  background-size: cover; /* prueba con '100% 100%' si 'cover' no funciona */
-  background-repeat: no-repeat;
-  background-position: center center;
+.footer-content {
+    background-color: #65e9a4;
+    margin-top: 25px;
+    border-radius: 20px;
+    
+    flex-wrap: wrap !important;
 }
 
-/* Contenedor del footer */
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+.footer-logo {
+    display: flex;
+    justify-content: start;    
+}
+
+.footer-logo img {
+    margin-top: 50px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+    border-bottom: 3px solid white;
+}
+
+.footer-column {
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+
+.footer-image img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-image {
+    /* margin-left: 100px; */
+    margin-bottom: 100px;
+}
+
+.footer-columns ul li a {
+    text-decoration: none;
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    color: #090909 !important;
+    font-size: 20px !important;
+}
+
+.footer-columns h4 {
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    color: #090909 !important;
+}
+
+.footer-columns ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.policy-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 5px;
+    
 }
 
+.terms-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.terms-content p {
+    padding-left: 10px;
+}
+
+.policy-content .reserved p {
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    color: #090909 !important;
+}
+
+.terms-content a {
+    text-decoration: none;
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    color: #090909 !important;
+}
+
+.social {
+    display: flex;
+}
+
+
+.social .faceBook img {
+    width: 10px;
+}
+
+.social .twitter img {
+    width: 20px;
+}
+
+.social .instagram img {
+    width: 20px;
+}
+
+.social a {
+    padding: 5px;
+}
