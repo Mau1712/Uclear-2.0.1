@@ -386,6 +386,14 @@
         margin-left: 315px !important;
         margin-top: 15px !important;
     }
+
+    .buttonEligible {
+        position: absolute;
+        bottom: 12%;
+        right: 47%;
+
+        /* padding: 1% !important; */
+    }
 }
 
 @media screen and (max-width: 2304px) {
@@ -394,6 +402,12 @@
         right: 46.9%;
 
         padding: 10px;
+    }
+
+    .logoDesktop {
+        max-width: 280px !important;
+        margin-left: 470px !important;
+        margin-top: 5px;
     }
 }
 
@@ -770,7 +784,9 @@
     }
 
     .clikMenu {
-        max-width: 70px;
+        max-width: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
 
     .logoMobileN {
@@ -791,7 +807,7 @@
     }
 
     .offcanvas-body {
-        background-color: #02382E !important;
+        background-color: #ffffff !important;
     }
 
     .offcanvas-body P {
@@ -1019,6 +1035,7 @@
 .footer-columns {
     display: flex;
     justify-content: space-around;
+    align-items: start;
 
     flex-wrap: wrap;
     border-bottom: 3px solid white;
@@ -1026,7 +1043,7 @@
 
 .footer-column {
     padding: 2%;
-    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 
@@ -1037,7 +1054,7 @@
 
 .footer-image {
     /* margin-left: 100px; */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .footer-columns ul li a {
@@ -1065,7 +1082,7 @@
 .policy-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 8px;
     
 }
 
@@ -1077,6 +1094,8 @@
 .terms-content p {
     padding-left: 10px;
 }
+
+
 
 .policy-content .reserved p {
     font-family: quiet-sans, sans-serif !important;
@@ -1113,3 +1132,20 @@
 .social a {
     padding: 5px;
 }
+
+.bookAppoimentFooter {
+    text-decoration: none;
+    font-family: quiet-sans, sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    color:#ffffff !important;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #02382E;
+}
+
+.locationColumn ul {
+    margin-bottom: 25px;
+}
+
+
