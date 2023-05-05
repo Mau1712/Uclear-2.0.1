@@ -500,14 +500,14 @@
 
     .clikMenu {
         max-width: 50px;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: 10px;
     }
 
     .logoMobileN {
         max-width: 160px;
-        margin-left: 65px !important;
-        margin-top: 12px;
+        margin-left: 35px !important;
+        margin-top: 5px;
     }
 
     .menuMobile-scroll {
@@ -658,11 +658,76 @@
 
 }
 
+@media screen and (max-width: 430px) {
+    .contactUsMenuMobile h2 {
+        font-size: 30px;
+    }
+    
+    .contactUsMenuMobile a {
+        font-size: 20px;
+    }
 
-@media screen and (max-width: 375px) {
+    .navMenuMobil li a {
+        font-size: 30px;
+    }
+
     .logoMobileN {
         max-width: 150px !important;
         margin-left: 50px !important;
     }
+
 }
 
+@media screen and (max-width: 415px) {
+    .contactUsMenuMobile h2 {
+        font-size: 27px;
+    }
+    
+    .contactUsMenuMobile a {
+        font-size: 16px;
+    }
+
+    .navMenuMobil li a {
+        font-size: 25px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+    .logoMobileN {
+        max-width: 150px !important;
+        margin-left: 30px !important;
+    }
+
+    .contactUsMenuMobile h2 {
+        font-size: 25px;
+    }
+    
+    .contactUsMenuMobile a {
+        font-size: 14px;
+    }
+
+    .navMenuMobil li a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contactUsMenuMobile a {
+        font-size: 12px;
+    }
+
+    .contactUsMenuMobile h2 {
+        font-size: 25px;
+    }
+
+    .logoMobileN {
+        max-width: 150px !important;
+        margin-left: 20px !important;
+    }
+
+    
+}

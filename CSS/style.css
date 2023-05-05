@@ -1191,6 +1191,26 @@
 
 }
 
+@media screen and (max-width: 430px) {
+    .contactUsMenuMobile h2 {
+        font-size: 30px;
+    }
+    
+    .contactUsMenuMobile a {
+        font-size: 20px;
+    }
+
+    .navMenuMobil li a {
+        font-size: 30px;
+    }
+
+    .logoMobileN {
+        max-width: 150px !important;
+        margin-left: 70px !important;
+    }
+
+}
+
   
 
 @media screen and (max-width: 425px) {
@@ -1198,6 +1218,21 @@
         max-width: 160px;
         margin-left: 54px !important;
     }
+}
+
+@media screen and (max-width: 415px) {
+    .contactUsMenuMobile h2 {
+        font-size: 27px;
+    }
+    
+    .contactUsMenuMobile a {
+        font-size: 16px;
+    }
+
+    .navMenuMobil li a {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 393px) {
@@ -1264,6 +1299,18 @@
         margin-top: 0px !important;
     }
 
+    .contactUsMenuMobile h2 {
+        font-size: 25px;
+    }
+    
+    .contactUsMenuMobile a {
+        font-size: 14px;
+    }
+
+    .navMenuMobil li a {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -1287,6 +1334,14 @@
         max-width: 40px;
         margin-top: 10px;
         margin-left: 10px;
+}
+
+.contactUsMenuMobile a {
+    font-size: 12px;
+}
+
+.contactUsMenuMobile h2 {
+    font-size: 25px;
 }
 }
 
