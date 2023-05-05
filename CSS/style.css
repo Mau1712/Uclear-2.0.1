@@ -963,7 +963,7 @@
     }
 
     .menuMobile-scroll {
-        background-color: #65e9a4;
+        background-color: #66f9adb4;
     }
 
     .menuMobile {
@@ -1107,7 +1107,7 @@
     .social {
         margin-bottom: 10px !important ;
     }
-    
+
 
 }
 
@@ -1168,7 +1168,9 @@
     }
 
     .clikMenu {
-        max-width: 60px;
+            max-width: 50px;
+            margin-top: 10px;
+            margin-left: 10px;
     }
 
     .navbar-toggler {
@@ -1200,5 +1202,11 @@
         margin-left: 5px !important;
         margin-top: 0px !important;
     }
+
+    .clikMenu {
+        max-width: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+}
 }
 

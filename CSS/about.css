@@ -41,6 +41,10 @@
     justify-content: space-between;
 }
 
+.boxLogo-btn {
+    display: flex;
+}
+
 /* Book Appoiment Button */
 
 .boAbout {
@@ -69,6 +73,32 @@
     color: #090909 !important;
 }
 
+.boAbout2 {
+    background-color: #02382E;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    padding-right: 0%;
+
+}
+
+.bookAbout2 {
+    font-family: quiet-sans, sans-serif !important;
+    font-style: normal !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 100 !important;
+    font-size: 10px !important;
+}
+
+.boAbout2:hover {
+    background-color: #deffa4a9;
+}
+
+.bookAbout2:hover {
+    color: #090909 !important;
+}
+
 /* .whatsfloat {
     color: #02382E;
 }
@@ -82,7 +112,7 @@
     z-index: 100; } */
 
 .prtadaAbout {
-    margin-top: 60px;
+    margin-top: 20px;
 
     display: flex;
     flex-direction: column;
@@ -122,6 +152,7 @@
     color: #00F77B;
 
     text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -394,7 +425,15 @@
 }
 
 
-
+@media screen and (max-width: 991px) {
+    .logoAb {
+        display: none;
+    } 
+    
+    .boAbout {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .cajaDeRichardMonile {
@@ -408,6 +447,9 @@
     .prtadaAbout {
         margin-top: 30px;
     }
+
+
+    
 }
 
 @media screen and (max-width: 470px) {
@@ -507,4 +549,11 @@
 
 }
 
+
+@media screen and (max-width: 375px) {
+    .logoMobileN {
+        max-width: 150px !important;
+        margin-left: 50px !important;
+    }
+}
 
