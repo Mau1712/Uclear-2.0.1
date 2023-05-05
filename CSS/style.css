@@ -983,20 +983,20 @@
     }
 
     .navMenuMobil {
-        list-style: none !important;
-
         flex-direction: column;
-        padding: 0%;
+        justify-content: center;
+        align-items: start;
 
+        list-style: none !important;
+        padding: 0%;
     }
 
+
     .navMenuMobil li {
-        margin: 10px;
-        background-color: #00F77B;
-        max-width: 20%;
         text-align: center;
-        border: solid 3px c;
-        border-radius: 40px;
+        border: solid 1.5px;
+        border-color: #ffffff;
+        border-radius: 10px;
     }
 
     .navMenuMobil li a {
@@ -1005,8 +1005,36 @@
         font-weight: 400 !important;
         font-style: normal !important;
         color: #02382E !important;
-        padding: 5px;
+        font-size: 35px;
+        padding: 25px;
+    }
 
+    .redesMenuOffCanvas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgRedesMenuOffCanvas {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .imgRedesMenuOffCanvas img {
+        margin-inline: 5px;
+    }
+
+
+    .faceBookMenu{
+        max-width: 12px;
+    }
+
+    .twitterMenu {
+        max-width: 24px;
+    }
+
+    .instagramMenu {
+        max-width: 24px;
     }
 
     .imgOpenOffCanva {
