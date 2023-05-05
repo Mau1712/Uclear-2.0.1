@@ -960,6 +960,7 @@
     .logoMobileN {
         max-width: 160px;
         margin-left: 65px !important;
+        margin-top: 12px;
     }
 
     .menuMobile-scroll {
@@ -982,6 +983,21 @@
         color: #C9FBE2;
     }
 
+    .imgBodyOfcanvas img {
+        max-width: 150px;
+    }
+
+    .menuList-img {
+        display: flex;
+        max-width: 100%;
+    }
+
+    .imgBodyOfcanvas {
+        max-width: 40% !important;
+        margin-left: 6%;
+    }
+
+
     .navMenuMobil {
         flex-direction: column;
         justify-content: center;
@@ -994,9 +1010,6 @@
 
     .navMenuMobil li {
         text-align: center;
-        border: solid 1.5px;
-        border-color: #ffffff;
-        border-radius: 10px;
     }
 
     .navMenuMobil li a {
@@ -1007,6 +1020,42 @@
         color: #02382E !important;
         font-size: 35px;
         padding: 25px;
+    }
+
+    .contactUsMenuMobile {
+        margin-top: 15%;
+        align-items: center;
+        margin-bottom: 85%;
+    }
+
+    .contactUsMenuMobile h2 {
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        color: #02382E !important;
+        font-size: 35px;
+        padding: 18px;
+    }
+
+    .contactUsMenuMobile a {
+        background-color: #02382E;
+        border-radius: 25px;
+        text-decoration: none;
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        color: #ffffff !important;
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .contactUsMenuMobile a:hover{
+        background-color: #DDFFA4;
+
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        color: #090909 !important;
     }
 
     .redesMenuOffCanvas {

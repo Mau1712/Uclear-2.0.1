@@ -74,6 +74,10 @@
 }
 
 .boAbout2 {
+    display: none;
+}
+
+.boAbout2 {
     background-color: #02382E;
     border-radius: 40px;
     margin-bottom: 10px;
@@ -97,6 +101,10 @@
 
 .bookAbout2:hover {
     color: #090909 !important;
+}
+
+.logoAb2 {
+    display: none;
 }
 
 /* .whatsfloat {
@@ -433,6 +441,14 @@
     .boAbout {
         display: none;
     }
+
+    .boAbout2 {
+        display: block;
+    }
+
+    .logoAb2 {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -473,75 +489,168 @@
     }
 
     /* MENU MOBILE */
-.menuMobile {
-    display: block !important;
-    position: fixed !important;
-    background-color: #00f77c63; 
-    
-    border-radius: 20px;
-}
+    .menuMobile {
+        display: block !important;
+        background-color: #66f9adb4;
 
-.clikMenu {
-    max-width: 40px;
-    margin-top: 2px;
-    margin-left: 1px;
-}
+        position: fixed !important;
+        top: 0%;
+        z-index: 100 !important;
+    }
 
-.logoMobileN {
-    max-width: 160px !important;
-    margin-left: 75px !important;
-}
+    .clikMenu {
+        max-width: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
-.menuMobile-scroll {
-    background-color: #65e9a4;
-}
+    .logoMobileN {
+        max-width: 160px;
+        margin-left: 65px !important;
+        margin-top: 12px;
+    }
 
-.menuMobile {
-    width: 100% !important;
-}
+    .menuMobile-scroll {
+        background-color: #66f9adcb;
+    }
 
-.offcanvas-header {
-    background-color: #33f896 !important;
-}
+    .menuMobile {
+        width: 100% !important;
+    }
 
-.offcanvas-body {
-    background-color: #ffffff !important;
-}
+    .offcanvas-header {
+        background-color: #33f896 !important;
+    }
 
-.offcanvas-body P {
-    color: #C9FBE2;
-}
+    .offcanvas-body {
+        background-color: #ffffff !important;
+    }
 
-.navMenuMobil {
-    list-style: none !important;
+    .offcanvas-body P {
+        color: #C9FBE2;
+    }
 
-    flex-direction: column;
-    padding: 0%;
+    .imgBodyOfcanvas img {
+        max-width: 150px;
+    }
 
-}
+    .menuList-img {
+        display: flex;
+        max-width: 100%;
+    }
 
-.navMenuMobil li {
-    margin: 10px;
-    background-color: #00F77B;
-    max-width: 20%;
-    text-align: center;
-    border: solid 3px c;
-    border-radius: 40px;
-}
+    .imgBodyOfcanvas {
+        max-width: 40% !important;
+        margin-left: 6%;
+    }
 
-.navMenuMobil li a {
-    text-decoration: none;
-    font-family: quiet-sans, sans-serif !important;
-    font-weight: 400 !important;
-    font-style: normal !important;
-    color: #02382E !important;
-    padding: 5px;
 
-}
+    .navMenuMobil {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
 
-.imgOpenOffCanva {
-    max-width: 150px !important;
-}
+        list-style: none !important;
+        padding: 0%;
+    }
+
+
+    .navMenuMobil li {
+        text-align: center;
+    }
+
+    .navMenuMobil li a {
+        text-decoration: none;
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        color: #02382E !important;
+        font-size: 35px;
+        padding: 25px;
+    }
+
+    .contactUsMenuMobile {
+        margin-top: 15%;
+        align-items: center;
+        margin-bottom: 85%;
+    }
+
+    .contactUsMenuMobile h2 {
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        color: #02382E !important;
+        font-size: 35px;
+        padding: 18px;
+    }
+
+    .contactUsMenuMobile a {
+        background-color: #02382E;
+        border-radius: 25px;
+        text-decoration: none;
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        color: #ffffff !important;
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .contactUsMenuMobile a:hover{
+        background-color: #DDFFA4;
+
+        font-family: quiet-sans, sans-serif !important;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        color: #090909 !important;
+    }
+
+    .redesMenuOffCanvas {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgRedesMenuOffCanvas {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .imgRedesMenuOffCanvas img {
+        margin-inline: 5px;
+    }
+
+
+    .faceBookMenu{
+        max-width: 12px;
+    }
+
+    .twitterMenu {
+        max-width: 24px;
+    }
+
+    .instagramMenu {
+        max-width: 24px;
+    }
+
+    .imgOpenOffCanva {
+        max-width: 150px !important;
+    }
+
+
+    .portadaTablet {
+        display: none !important;
+    }
+
+    .portadaTaMobile {
+        display: block !important;
+    }
+
+    .logoMobile {
+        max-width: 140px;
+        margin-right: 115px;
+        margin-top: 20px;
+    }
 
 .prtadaAbout {
     margin-top: 80px;
