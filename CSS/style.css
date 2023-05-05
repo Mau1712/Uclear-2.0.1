@@ -959,7 +959,7 @@
 
     .logoMobileN {
         max-width: 160px;
-        margin-left: 75px !important;
+        margin-left: 65px !important;
     }
 
     .menuMobile-scroll {
@@ -1136,6 +1136,9 @@
         margin-bottom: 10px !important ;
     }
 
+    .footer-image {
+        max-width: 250px;
+    }
 
 }
 
@@ -1155,7 +1158,7 @@
     }
 
     .clikMenu {
-        max-width: 60px;
+        max-width: 50px;
     }
 
     .navbar-toggler {
@@ -1196,7 +1199,7 @@
     }
 
     .clikMenu {
-            max-width: 50px;
+            max-width: 45px;
             margin-top: 10px;
             margin-left: 10px;
     }
