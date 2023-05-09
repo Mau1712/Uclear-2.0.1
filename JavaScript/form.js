@@ -6,7 +6,7 @@ document.getElementById('formMail')
 
     btn.value = 'Sending...';
 
-    const serviceID = 'default_service';
+    const serviceID = 'service_njkrqc7';
     const templateID = 'template_9h4s0of';
 
     emailjs.sendForm(serviceID, templateID, this)
@@ -56,7 +56,98 @@ cookiesSettingsLink.addEventListener("click", function (event) {
   swal.fire({
     icon: 'warning',
     title: 'Uclear® Corporation Cookie Settings',
-    html: '<p> Uclear® Corporation uses cookies on its website. By using our website, you agree to the use of cookies in accordance with this cookie policy. If you do not accept the use of these cookies, please disable cookies by following the instructions in this cookie policy or in your browser settings. If you disable cookies, some features of our website may not be available. <br><br> <h5>What are cookies?</h5> Cookies are small text files that are placed on your device (computer, mobile phone or tablet) when you visit our website. Cookies are used to collect information about your activity on our website, such as the pages you visit and how often you visit them. <br><br> <h5>Types of cookies we use</h5> We use different types of cookies on our website, which can be classified as follows: <br> <ul> <li>Necessary cookies: these cookies are essential to enable you to use our website and its features. Without these cookies, some features would not be available.</li> <br> <li>Performance Cookies: these cookies are used to collect information about how visitors use our website. They allow us to improve our website and provide a better user experience.</li> <br> <li>Functionality Cookies: these cookies allow our website to remember choices you have made in the past, such as your preferred language, to provide a personalized experience.</li> <br> <li>Advertising Cookies: these cookies are used to display relevant advertisements to you. They are also used to limit the number of times you see an advertisement and to measure the effectiveness of an advertising campaign.</li> <ul> <br> <h5>How to disable cookies</h5> You can disable cookies in your browser settings. <br> Please note that if you disable cookies, some features of our website may not be available. <br><br> <h5>Changes in the cookie policy</h5> We may update this cookie policy from time to time. Any changes we make to this cookie policy will be posted on this page. Therefore, we recommend that you check this page regularly to be aware of any changes to our cookie policy. <br><br> <h5>Contact Us</h5> If you have any questions about our cookie policy, you can contact us through our website or by email at info@uclearsmile.com </p>',
+    html: '<p> Uclear® Corporation uses cookies on its website. By using our website, you agree to the use of cookies in accordance with this cookie policy. If you do not accept the use of these cookies, please disable cookies by following the instructions in this cookie policy or in your browser settings. If you disable cookies, some features of our website may not be available. <br><br> <h5>What are cookies?</h5> Cookies are small text files that are placed on your device (computer, mobile phone or tablet) when you visit our website. Cookies are used to collect information about your activity on our website, such as the pages you visit and how often you visit them. <br><br> <h5>Types of cookies we use</h5> We use different types of cookies on our website, which can be classified as follows: <br> <ul> <li>Necessary cookies: these cookies are essential to enable you to use our website and its features. Without these cookies, some features would not be available.</li> <br> <li>Performance Cookies: these cookies are used to collect information about how visitors use our website. They allow us to improve our website and provide a better user experience.</li> <br> <li>Functionality Cookies: these cookies allow our website to remember choices you have made in the past, such as your preferred language, to provide a personalized experience.</li> <br> <li>Advertising Cookies: these cookies are used to display relevant advertisements to you. They are also used to limit the number of times you see an advertisement and to measure the effectiveness of an advertising campaign.</li> </ul> <br> <h5>How to disable cookies</h5> You can disable cookies in your browser settings. <br> Please note that if you disable cookies, some features of our website may not be available. <br><br> <h5>Changes in the cookie policy</h5> We may update this cookie policy from time to time. Any changes we make to this cookie policy will be posted on this page. Therefore, we recommend that you check this page regularly to be aware of any changes to our cookie policy. <br><br> <h5>Contact Us</h5> If you have any questions about our cookie policy, you can contact us through our website or by email at info@uclearsmile.com </p>',
     confirmButtonColor: '#00F77B'  
   });
 });
+
+
+
+//------------------------------------------------------------------//
+
+
+// Obtén el modal y los botones para abrirlo
+var modal = document.getElementById("BookAppoimentModal");
+var buttonsSend = document.querySelectorAll("[id^='bookAppoimentId']");
+
+// Obtén el elemento <span> que cierra el modal
+var span = document.getElementsByClassName("close")[0];
+
+// Asigna el evento onclick a cada botón para abrir el modal correspondiente
+buttonsSend.forEach(function(button) {
+  button.onclick = function() {
+    modal.style.display = "block";
+  }
+});
+
+// Cuando el usuario haga clic en <span> (x), cierra el modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic fuera del modal, también lo cierra
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function limpiarFormulario() {
+  document.getElementById("formBook").reset();
+}
+
+// Cuando el usuario envía el formulario, limpiar los campos del formulario
+formBook.addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  limpiarFormulario();
+});
+
+
+function closeModal() {
+  var modal = document.getElementById("BookAppoimentModal");
+  modal.style.display = "none";
+}
+
+const btnBook = document.getElementById('button-Book-send');
+
+document.getElementById('formBook')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_1hllf74';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      
+      btn.value = 'Send Email';
+      Swal.fire({
+        title: 'Good job!',
+        text: 'Your message has been sent successfully!',
+        icon: 'success',
+        confirmButtonColor: '#00F77B'})
+        limpiarFormulario();
+        closeModal();
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+
+
+// cerrar OffCanvas con el click a form
+let menuBtn = document.querySelector('.bookAppoimentMobile');
+let offCanvas = document.querySelector('.offcanvas');
+
+menuBtn.addEventListener('click', function () {
+    let offCanvas = document.querySelector('.offcanvas');
+    let offCanvasBackdrop = document.querySelector('.offcanvas-backdrop');
+    offCanvas.classList.remove('show');
+    offCanvasBackdrop.classList.remove('show');
+});
+
+
+
