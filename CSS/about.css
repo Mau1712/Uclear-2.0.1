@@ -746,7 +746,7 @@
     width: 50% !important;
     height: 100%;
     overflow: auto; /* Permite hacer scroll si el contenido es muy largo */
-    background-color: rgba(0, 0, 0, 0.76); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.87) !important; /* Fondo semi-transparente */
     border-radius: 10px;
   }
 
@@ -798,6 +798,7 @@
   .modal-content h4 {
     color: #00F77B;
     margin-bottom: 5%;
+    text-align: center;
   }
 
   .modal-content .field {
