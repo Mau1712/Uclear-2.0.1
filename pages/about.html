@@ -6,18 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--CCS only Bots-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+    <!-- CSS About -->
     <link rel="stylesheet" href="../CSS/about.css">
 
-    <!-- Animate CCS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <!-- Tipografia -->
+   <link rel="stylesheet" href="https://use.typekit.net/xtp8fgp.css">
+
+   <!-- Animate CCS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+   <!-- Boosttrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+   <!-- Email.JS  -->
+   <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('hYvqOg5wQIUBfnCsI')
+</script>
+
+   <!-- Sweetalert -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
-    <!-- tipografia -->
-    <link rel="stylesheet" href="https://use.typekit.net/xtp8fgp.css">
 
 
     <title>About</title>
@@ -55,12 +68,48 @@
                         <img class="img-fluid" style="max-width:150px;" src="../img/imgGlobal/logo.png" alt="">
                     </div>
 
-                    <div class="boAbout">
-                        <a class="btn bookAbout" href="">Book Appoiment</a>
+                    <div class="boAbout bookAppoiment">
+                        <button id="bookAppoimentId" class="btn btn-outline bookAbout" type="submit">Book Appoiment</button>
                     </div>
                 </div>
             </div>
         </nav>
+
+        
+        <div id="BookAppoimentModal" class="bookModal container">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>We would love to hear from U! Our team will get back to U very soon</h4>
+                <form id="formBook">
+                    <div class="form-group field">
+                        <label for="Full_Name">Full Name:</label>
+                        <input type="text" name="Full_Name" id="Full_Name" placeholder="Enter full name"
+                            class="form-control">
+                    </div>
+                    <div class="form-group field">
+                        <label for="Email">Email:</label>
+                        <input type="text" name="Email" id="Email" placeholder="Enter your email" class="form-control">
+                    </div>
+                    <div class="form-group field">
+                        <label for="Phone_number">Phone Number:</label>
+                        <input type="text" name="Phone_number" id="Phone_number" placeholder="Phone number"
+                            class="form-control">
+                    </div>
+                    <div class="form-group field">
+                        <label for="Type_of_enquiry">Type of enquiry:</label>
+                        <input type="text" name="Type_of_enquiry" id="Type_of_enquiry" placeholder="type of enquiry"
+                            class="form-control">
+                    </div>
+                    <div class="form-group field">
+                        <label for="Message">Message:</label>
+                        <textarea name="Message" id="Message" placeholder="Enter your enquiry"
+                            class="form-control"></textarea>
+                    </div>
+
+                    <input type="submit" id="button-Book-send" value="Send Email" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
 
 
         <div class="menuMobile">
@@ -69,6 +118,7 @@
                 <span class="visually-hidden">Enable both</span>
                 <img class="clikMenu" src="../img/imgHome/imgMenuMobile.png" alt="Imagen">
             </button>
+            
 
             <img class="logoMobileN animate__animated animate__fadeInDown" src="../img/imgGlobal/logo.png" alt="">
 
@@ -80,8 +130,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <div class="menuList-img">
-                        <div>
+                    <div class="menuList-img container">
+                        <div class="container">
                             <ul class="navMenuMobil d-flex">
                                 <li> <a href="../index.html">Home</a> </li>
                                 <li> <a href="partners.html">Partners</a> </li>
@@ -93,7 +143,13 @@
 
                     <div class="container d-flex contactUsMenuMobile">
                         <h2>Contact Us</h2>
-                        <a href="">Book Appoiment</a>
+                        <div class="bookAppoiment">
+
+                            <button id="bookAppoimentId" class="btn btn-outline bookAppoimentTxt bookAppoimentMobile"
+                                data-target="#BookAppoimentModal" type="submit">Book
+                                Appoiment</button>
+
+                        </div>
                     </div>
 
                     <div class="redesMenuOffCanvas">
@@ -305,7 +361,7 @@
                         <li><a href="#">User FAQs</a></li>
                         <li><a class="suitable" href="#">Am I Suitable for a Treatment?</a></li>
                     </ul>
-                    <a class="bookAppoimentFooter" href="#">Book Appointment</a>
+                    <a class="bookAppoimentFooter" id="bookAppoimentId" href="#">Book Appointment</a>
                     <!-- <button class="bookAppoimentFooter">Book Appointment</button> -->
                 </div>
                 <div class="footer-image">
@@ -317,13 +373,13 @@
                     <p>2023 Uclear®, LLC. All right reserved.</p>
                 </div>
                 <div class="terms-content">
-                    <a href="">
+                    <a id="privacyPolicyLink" href="">
                         <p>PrivacyPolicy</p>
                     </a>
-                    <a href="">
+                    <a id="termOfServiceLink" href="">
                         <p>Term of service</p>
                     </a>
-                    <a href="">
+                    <a id="cookiesSettingsLink" href="">
                         <p>Cookies Settings</p>
                     </a>
                 </div>
@@ -342,11 +398,10 @@
 
 
 
-    <script src="../JavaScript/index.js"></script>
+   <!-- Js Form -->
+   <script src="../JavaScript/formAbout.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

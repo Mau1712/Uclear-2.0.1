@@ -1,31 +1,3 @@
-const btn = document.getElementById('buttonMail');
-
-document.getElementById('formMail')
-  .addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    btn.value = 'Sending...';
-
-    const serviceID = 'service_njkrqc7';
-    const templateID = 'template_9h4s0of';
-
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.value = 'Subcribe';
-        Swal.fire({
-          title: 'Good job!',
-          text: 'You have subscribed',
-          icon: 'success',
-          confirmButtonColor: '#00F77B'
-        });
-      }, (err) => {
-        btn.value = 'Subcribe';
-        alert(JSON.stringify(err));
-      });
-  });
-
-
-
 const privacyPolicyLink = document.getElementById("privacyPolicyLink");
 const termOfServiceLink = document.getElementById("termOfServiceLink");
 const cookiesSettingsLink = document.getElementById("cookiesSettingsLink");
@@ -113,7 +85,7 @@ document.getElementById('formBook')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btnBook.value = 'Sending...';
 
    const serviceID = 'default_service';
    const templateID = 'template_1hllf74';
@@ -121,7 +93,7 @@ document.getElementById('formBook')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       
-      btn.value = 'Send Email';
+      btnBook.value = 'Send Email';
       Swal.fire({
         title: 'Good job!',
         text: 'Your message has been sent successfully!',
@@ -130,7 +102,7 @@ document.getElementById('formBook')
         limpiarFormulario();
         closeModal();
     }, (err) => {
-      btn.value = 'Send Email';
+      btnBook.value = 'Send Email';
       alert(JSON.stringify(err));
     });
 });
@@ -147,6 +119,3 @@ menuBtn.addEventListener('click', function () {
     offCanvas.classList.remove('show');
     offCanvasBackdrop.classList.remove('show');
 });
-
-
-

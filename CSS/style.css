@@ -1352,7 +1352,7 @@
 .bookModal {
     display: none; /* Oculta el modal por defecto */
     position: fixed; /* Lo posiciona en la pantalla */
-    z-index: 1000; /* Lo pone encima de otros elementos */
+    z-index: 1; /* Lo pone encima de otros elementos */
     left: 25%;
     top: 3%;
     width: 50% !important;

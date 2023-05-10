@@ -584,7 +584,7 @@
         padding: 18px;
     }
 
-    .contactUsMenuMobile a {
+    .contactUsMenuMobile .bookAppoiment .btn {
         background-color: #02382E;
         border-radius: 25px;
         text-decoration: none;
@@ -592,11 +592,11 @@
         font-weight: 400 !important;
         font-style: normal !important;
         color: #ffffff !important;
-        font-size: 20px;
+        font-size: 15px;
         padding: 12px;
     }
 
-    .contactUsMenuMobile a:hover{
+    .contactUsMenuMobile .bookAppoiment .btn:hover{
         background-color: #DDFFA4;
 
         font-family: quiet-sans, sans-serif !important;
@@ -731,3 +731,121 @@
 
     
 }
+
+
+
+/* MODAL FORM BOOK */
+
+/* Estilos del modal */
+.bookModal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed; /* Lo posiciona en la pantalla */
+    z-index: 1; /* Lo pone encima de otros elementos */
+    left: 25%;
+    top: 3%;
+    width: 50% !important;
+    height: 100%;
+    overflow: auto; /* Permite hacer scroll si el contenido es muy largo */
+    background-color: rgba(0, 0, 0, 0.76); /* Fondo semi-transparente */
+    border-radius: 10px;
+  }
+
+  /* Estilo de la barra de scroll */
+.bookModal::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .bookModal::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+  
+  .bookModal::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 20px;
+  }
+  
+  .bookModal::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centra el modal en la pantalla */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    margin-top: 5%;
+    border-radius: 20px !important;
+  }
+  
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 95%;
+    color: #ffffff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos del formulario */
+
+  .modal-content h4 {
+    color: #00F77B;
+    margin-bottom: 5%;
+  }
+
+  .modal-content .field {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content .field label {
+    margin-bottom: 0.5rem;
+    color: #00F77B;
+  }
+  
+  .modal-content .field input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .modal-content input[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .modal-content input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+
+  @media screen and (max-width: 470px) {
+    .bookModal {
+        display: none; /* Oculta el modal por defecto */
+        position: fixed; /* Lo posiciona en la pantalla */
+        z-index: 1; /* Lo pone encima de otros elementos */
+        left: 0%;
+        top: 0%;
+        width: 100% !important;
+        height: 100%;
+        overflow: auto; /* Permite hacer scroll si el contenido es muy largo */
+        background-color: rgba(0, 0, 0, 0.76); /* Fondo semi-transparente */
+      }
+
+  }
