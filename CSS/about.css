@@ -562,17 +562,17 @@
     .navMenuMobil li a {
         text-decoration: none;
         font-family: quiet-sans, sans-serif !important;
-        font-weight: 400 !important;
+        font-weight: 600 !important;
         font-style: normal !important;
         color: #02382E !important;
-        font-size: 35px;
+        font-size: 55px !important;
         
     }
 
     .contactUsMenuMobile {
-        margin-top: 15%;
-        align-items: center;
-        margin-bottom: 85%;
+        flex-direction: column;
+        justify-content: center;
+        
     }
 
     .contactUsMenuMobile h2 {
@@ -584,54 +584,23 @@
         padding: 18px;
     }
 
-    .contactUsMenuMobile .bookAppoiment .btn {
-        background-color: #02382E;
-        border-radius: 25px;
-        text-decoration: none;
+    .bookAppoimentContentBtn {
+        margin-left: 18px;
+    }
+
+    .contactUsMenuMobile h2 {
+        margin: 0% !important;
+    }
+
+    .contactUsMenuMobile h2 {
         font-family: quiet-sans, sans-serif !important;
         font-weight: 400 !important;
         font-style: normal !important;
-        color: #ffffff !important;
-        font-size: 15px;
-        padding: 12px;
+        color: #02382E !important;
+        font-size: 35px;
+        padding: 18px;
     }
 
-    .contactUsMenuMobile .bookAppoiment .btn:hover{
-        background-color: #DDFFA4;
-
-        font-family: quiet-sans, sans-serif !important;
-        font-weight: 600 !important;
-        font-style: normal !important;
-        color: #090909 !important;
-    }
-
-    .redesMenuOffCanvas {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .imgRedesMenuOffCanvas {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-    }
-
-    .imgRedesMenuOffCanvas img {
-        margin-inline: 5px;
-    }
-
-
-    .faceBookMenu{
-        max-width: 12px;
-    }
-
-    .twitterMenu {
-        max-width: 24px;
-    }
-
-    .instagramMenu {
-        max-width: 24px;
-    }
 
     .imgOpenOffCanva {
         max-width: 150px !important;
@@ -740,13 +709,13 @@
 .bookModal {
     display: none; /* Oculta el modal por defecto */
     position: fixed; /* Lo posiciona en la pantalla */
-    z-index: 1; /* Lo pone encima de otros elementos */
+    z-index: 1000!important; /* Lo pone encima de otros elementos */
     left: 25%;
     top: 3%;
     width: 50% !important;
     height: 100%;
     overflow: auto; /* Permite hacer scroll si el contenido es muy largo */
-    background-color: rgba(0, 0, 0, 0.87) !important; /* Fondo semi-transparente */
+    background-color: #02382E !important; /* Fondo semi-transparente */
     border-radius: 10px;
   }
 
@@ -780,25 +749,34 @@
   
   .close {
     float: right;
-    font-size: 28px;
+    font-size: 65px;
     font-weight: bold;
-    margin-left: 95%;
+    margin-left: 45%;
     color: #ffffff;
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color:#00F77B;
     text-decoration: none;
     cursor: pointer;
   }
   
   /* Estilos del formulario */
 
-  .modal-content h4 {
+  .modal-content h5 {
     color: #00F77B;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     text-align: center;
+    margin-top: 5%;
+  }
+
+  .modal-content form .btnFormSend {
+    background-color: #00F77B !important;
+    color: #02382E !important;
+    font-weight: 600 !important;
+    border-radius: 30px !important;
+    padding-inline: 40px !important;
   }
 
   .modal-content .field {
@@ -819,20 +797,13 @@
     font-size: 1rem;
     outline: none;
   }
-  
-  .modal-content input[type="submit"] {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    cursor: pointer;
+
+  .modal-content .field input {
+    border-radius: 15px !important;
   }
-  
-  .modal-content input[type="submit"]:hover {
-    background-color: #3e8e41;
+
+  .modal-content .field textarea {
+    border-radius: 15px !important;
   }
 
 
@@ -849,4 +820,41 @@
         background-color: rgba(0, 0, 0, 0.76); /* Fondo semi-transparente */
       }
 
+  }
+
+  /* para bolie */
+.bookAppoimentMobile {
+    font-family: quiet-sans, sans-serif !important;
+    font-style: normal !important;
+    color:#02382E !important;
+    font-weight: 600 !important;
+    font-size: 25px !important;
+    background-color: #00F77B !important;
+    border-radius: 30px !important;
+}
+
+.bookAppoimentMobile:hover {
+background-color: #DDFFA4 !important;
+color: #090909 !important;
+}
+
+.offcanvas-header .closeHeaderMobile {
+    font-size: 25px !important;    
+}
+
+/* para mobile */
+.redesMenuOffCanvas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20%;
+  }
+  .redesMenuOffCanvas a {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }

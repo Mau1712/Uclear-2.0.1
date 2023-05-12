@@ -31,6 +31,7 @@
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  
+    <link rel="icon" href="../img/imgGlobal/FAV_ICON.svg">
 
     <title>Partners</title>
 </head>
@@ -64,7 +65,7 @@
                         </div>
                     </ul>
                     <div class="logoAb">
-                        <img class="img-fluid" style="max-width:150px;" src="../img/imgGlobal/logo.png" alt="">
+                        <img class="img-fluid" style="max-width:150px;" src="../img/imgGlobal/logo.png" alt="logo-Uclear">
                     </div>
 
                     <div class="boAbout bookAppoiment">
@@ -78,7 +79,7 @@
         <div id="BookAppoimentModal" class="bookModal container">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h4>We would love to hear from U! Our team will get back to U very soon</h4>
+                <h5>We would love to hear from U! Our team will get back to U very soon</h5>
                 <form id="formBook">
                     <div class="form-group field">
                         <label for="Full_Name">Full Name:</label>
@@ -105,7 +106,7 @@
                             class="form-control"></textarea>
                     </div>
 
-                    <input type="submit" id="button-Book-send" value="Send Email" class="btn btn-primary">
+                    <input type="submit" id="button-Book-send" value="Send Email" class="btn btnFormSend">
                 </form>
             </div>
         </div>
@@ -125,9 +126,11 @@
             <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel" style="width: 100vw;">
                 <div class="offcanvas-header">
-                    <img class="img-fluid imgOpenOffCanva" src="../img/imgGlobal/logo.png" alt="">
+                    
                     <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    
+                    <button type="button" class="btn-close closeHeaderMobile" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <img class="img-fluid imgOpenOffCanva" src="../img/imgGlobal/logo.png" alt="">
                 </div>
                 <div class="offcanvas-body">
                     <div class="menuList-img container">
@@ -138,30 +141,24 @@
                                 <li> <a href="#">Locations</a> </li>
                             </ul>
                         </div>
-                        <img class="img-fluid imgBodyOfcanvas" src="../img/imgGlobal/Recurso 44.svg" alt="">
                     </div>
 
                     <div class="container d-flex contactUsMenuMobile">
-                        <h2>Contact Us</h2>
-                        <div class="bookAppoiment">
-
+                        <h2>Contact Us</h2>                       
                             <button id="bookAppoimentId" class="btn btn-outline bookAppoimentTxt bookAppoimentMobile"
                                 data-target="#BookAppoimentModal" type="submit">Book
                                 Appoiment</button>
-
-                        </div>
                     </div>
 
-                    <div class="redesMenuOffCanvas">
-                        <div class="titleRedesMenuOffCanvas container">
-                            <h3>Follow Us</h3>
-                        </div>
-
-                        <div class="imgRedesMenuOffCanvas container-fluid">
-                            <img class="faceBookMenu" src="../img/imgGlobal/social/Facebook.svg" alt="">
-                            <img class="twitterMenu" src="../img/imgGlobal/social/twitter.svg" alt="">
-                            <img class="instagramMenu" src="../img/imgGlobal/social/instagram.svg" alt="">
-                        </div>
+                    <div class="redesMenuOffCanvas container">
+                        <h3>Follow Us</h3>
+                        <a href="#"><img src="../img/imgGlobal/social/Facebook.svg" alt="" class="img-fluid"
+                                style="max-width: 21px;"></a>
+                        <a href="#"><img src="../img/imgGlobal/social/twitter.svg" alt="" class="img-fluid"
+                                style="max-width: 40px;"></a>
+                        <a href="#"><img src="../img/imgGlobal/social/instagram.svg" alt="" class="img-fluid"
+                                style="max-width: 40px;"></a>
+                    </div>
                     </div>
                 </div>
             </div>

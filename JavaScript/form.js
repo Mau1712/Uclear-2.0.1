@@ -6,8 +6,8 @@ document.getElementById('formMail')
 
     btn.value = 'Sending...';
 
-    const serviceID = 'service_njkrqc7';
-    const templateID = 'template_9h4s0of';
+    const serviceID = 'default_service';
+    const templateID = 'template_zy001p7';
 
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
@@ -116,7 +116,7 @@ document.getElementById('formBook')
    btn.value = 'Sending...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_1hllf74';
+   const templateID = 'template_pphkijh';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 
@@ -20,16 +20,16 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Email.JS  -->
-    <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  emailjs.init('hYvqOg5wQIUBfnCsI')
-</script>
+    <script type="text/javascript">
+        emailjs.init('3QNa-s9HdLx0I4txj')
+    </script>
 
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
+    <link rel="icon" href="img/imgGlobal/FAV_ICON.svg">
 
 
 
@@ -47,7 +47,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <img class="logoMobile animate__animated animate__fadeInDown" src="img/imgGlobal/logo.png" alt="">
+                <img class="logoMobile animate__animated animate__fadeInDown" src="img/imgGlobal/logo.png"
+                    alt="logo-Uclear">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -60,7 +61,7 @@
                             <a class="nav-link" href="#">Locations</a>
                         </li>
                         <img class="logoDesktop animate__animated animate__fadeInDown" src="img/imgGlobal/logo.png"
-                            alt="">
+                            alt="logo-Uclear">
                     </ul>
                     <div class="bookAppoiment">
 
@@ -75,7 +76,7 @@
         <div id="BookAppoimentModal" class="bookModal container">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h4>We would love to hear from U! Our team will get back to U very soon</h4>
+                <h5>We would love to hear from U! Our team will get back to U very soon</h5>
                 <form id="formBook">
                     <div class="form-group field">
                         <label for="Full_Name">Full Name:</label>
@@ -92,8 +93,8 @@
                             class="form-control">
                     </div>
                     <div class="form-group field">
-                        <label for="Type_of_enquiry">Type of enquiry:</label>
-                        <input type="text" name="Type_of_enquiry" id="Type_of_enquiry" placeholder="type of enquiry"
+                        <label for="Type_of_enquiry">Type of inquiry:</label>
+                        <input type="text" name="Type_of_enquiry" id="Type_of_enquiry" placeholder="type of inquiry"
                             class="form-control">
                     </div>
                     <div class="form-group field">
@@ -102,7 +103,7 @@
                             class="form-control"></textarea>
                     </div>
 
-                    <input type="submit" id="button-Book-send" value="Send Email" class="btn btn-primary">
+                    <input type="submit" id="button-Book-send" value="Send Email" class="btn  btnFormSend">
                 </form>
             </div>
         </div>
@@ -113,18 +114,20 @@
             <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions">
                 <span class="visually-hidden">Enable both</span>
-                <img class="clikMenu" src="img/imgHome/imgMenuMobile.png" alt="Imagen">
+                <img class="clikMenu" src="img/imgHome/imgMenuMobile.png" alt="menu">
             </button>
-            
 
-            <img class="logoMobileN animate__animated animate__fadeInDown" src="img/imgGlobal/logo.png" alt="">
+
+            <img class="logoMobileN animate__animated animate__fadeInDown" src="img/imgGlobal/logo.png"
+                alt="logo-Uclear">
 
             <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel" style="width: 100vw;">
                 <div class="offcanvas-header">
-                    <img class="img-fluid imgOpenOffCanva" src="img/imgGlobal/logo.png" alt="">
+                    
                     <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5> -->
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close closeHeaderMobile" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <img class="img-fluid imgOpenOffCanva" src="img/imgGlobal/logo.png" alt="logo-Uclear">
                 </div>
                 <div class="offcanvas-body">
                     <div class="menuList-img container">
@@ -135,33 +138,28 @@
                                 <li> <a href="#">Locations</a> </li>
                             </ul>
                         </div>
-                        <img class="img-fluid imgBodyOfcanvas" src="img/imgGlobal/Recurso 44.svg" alt="">
+                        <!-- <img class="img-fluid imgBodyOfcanvas" src="img/imgGlobal/Recurso 44.svg" alt="molar"> -->
                     </div>
 
                     <div class="container d-flex contactUsMenuMobile">
                         <h2>Contact Us</h2>
-                        <div class="bookAppoiment">
-
                             <button id="bookAppoimentId" class="btn btn-outline bookAppoimentTxt bookAppoimentMobile"
                                 data-target="#BookAppoimentModal" type="submit">Book
-                                Appoiment</button>
-
-                        </div>
+                                Appoiment</button>  
                     </div>
 
-                    <div class="redesMenuOffCanvas">
-                        <div class="titleRedesMenuOffCanvas container">
+                    <div class="redesMenuOffCanvas container">
                             <h3>Follow Us</h3>
-                        </div>
-
-                        <div class="imgRedesMenuOffCanvas container-fluid">
-                            <img class="faceBookMenu" src="img/imgGlobal/social/Facebook.svg" alt="">
-                            <img class="twitterMenu" src="img/imgGlobal/social/twitter.svg" alt="">
-                            <img class="instagramMenu" src="img/imgGlobal/social/instagram.svg" alt="">
-                        </div>
+                            <a href="#"><img src="img/imgGlobal/social/Facebook.svg" alt="" class="img-fluid" style="max-width: 21px;"></a>
+                            <a href="#"><img src="img/imgGlobal/social/twitter.svg" alt="" class="img-fluid" style="max-width: 40px;"></a>
+                            <a href="#"><img src="img/imgGlobal/social/instagram.svg" alt="" class="img-fluid" style="max-width: 40px;"></a>
                     </div>
+
+
                 </div>
             </div>
+        </div>
+        </div>
         </div>
 
     </header>
@@ -219,11 +217,11 @@
             </div>
 
             <div class="container licencias">
-                <img src="img/imgGlobal/licencias/FDA.svg" class="img-fluid" alt="">
-                <img src="img/imgGlobal/licencias/ISO.svg" class="img-fluid" alt="">
-                <img src="img/imgGlobal/licencias/CE.svg" class="img-fluid" alt="">
-                <img src="img/imgGlobal/licencias/KDCA.svg" class="img-fluid" alt="">
-                <img src="img/imgGlobal/licencias/GMP.svg" class="img-fluid" alt="">
+                <img src="img/imgGlobal/licencias/FDA.svg" class="img-fluid" alt="FDA">
+                <img src="img/imgGlobal/licencias/ISO.svg" class="img-fluid" alt="ISO">
+                <img src="img/imgGlobal/licencias/CE.svg" class="img-fluid" alt="CE">
+                <img src="img/imgGlobal/licencias/KDCA.svg" class="img-fluid" alt="KDCA">
+                <img src="img/imgGlobal/licencias/GMP.svg" class="img-fluid" alt="GMP">
             </div>
         </div>
     </section>
@@ -247,19 +245,19 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/imgHome/carous/webMesa de trabajo 1.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/webMesa de trabajo 1.png" class="d-block w-100" alt="personalized">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/imgHome/carous/webMesa de trabajo 2.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/webMesa de trabajo 2.png" class="d-block w-100" alt="stress_free">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/imgHome/carous/webMesa de trabajo 3.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/webMesa de trabajo 3.png" class="d-block w-100" alt="high_quality">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/imgHome/carous/webMesa de trabajo 4.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/webMesa de trabajo 4.png" class="d-block w-100" alt="everyone">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/imgHome/carous/webMesa de trabajo 5.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/webMesa de trabajo 5.png" class="d-block w-100" alt="everyone">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -279,19 +277,19 @@
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/imgHome/carous/slide01.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/slide01.png" class="d-block w-100" alt="personalized">
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/imgHome/carous/slide02.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/slide02.png" class="d-block w-100" alt="stress_free">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/imgHome/carous/slide03.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/slide03.png" class="d-block w-100" alt="high_quality">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/imgHome/carous/slide04.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/slide04.png" class="d-block w-100" alt="everyone">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/imgHome/carous/slide05.png" class="d-block w-100" alt="...">
+                        <img src="img/imgHome/carous/slide05.png" class="d-block w-100" alt="everyone">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -310,7 +308,7 @@
 
     <section class="sectionCinco">
         <div class="container timeline">
-            <img src="img/imgHome/timeline.png" class="img-fluid" alt="">
+            <img src="img/imgHome/timeline.png" class="img-fluid" alt="timeline">
 
             <div class="buttonEligible">
                 <a href="">Am I eligible</a>
@@ -504,7 +502,7 @@
                 </form>
             </div>
             <div class="col-md-6 imgUnlimit">
-                <img src="img/imgHome/unlimit.svg" alt="">
+                <img src="img/imgHome/unlimit.svg" alt="unlimit">
             </div>
         </div>
     </section>
@@ -514,7 +512,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo container">
-                <img class="img-fluid" src="img/imgGlobal/logo.png" alt="">
+                <img class="img-fluid" src="img/imgGlobal/logo.png" alt="logo-Uclear">
             </div>
             <div class="footer-columns container d-flex justify-content-center align-items-center text-center">
                 <div class="footer-column">
@@ -546,7 +544,7 @@
                     <!-- <button class="bookAppoimentFooter">Book Appointment</button> -->
                 </div>
                 <div class="footer-image">
-                    <img class="img-fluid" src="img/imgGlobal/Somethings.svg" alt="">
+                    <img class="img-fluid" src="img/imgGlobal/Somethings.svg" alt="Somethings">
                 </div>
             </div>
             <div class="container policy-content">
@@ -565,11 +563,12 @@
                     </a>
                 </div>
                 <div class="social">
-                    <div><a class="faceBook" href="#"><img src="img/imgGlobal/social/Facebook.svg" alt=""></a></div>
+                    <div><a class="faceBook" href="#"><img src="img/imgGlobal/social/Facebook.svg" alt="faceBook"></a>
+                    </div>
                     <div><a class="twitter" href="https://twitter.com/Uclearsmiles"><img
-                                src="img/imgGlobal/social/twitter.svg" alt=""></a></div>
+                                src="img/imgGlobal/social/twitter.svg" alt="twitter"></a></div>
                     <div><a class="instagram" href="https://www.instagram.com/uclearsmile/"><img
-                                src="img/imgGlobal/social/instagram.svg" alt=""></a></div>
+                                src="img/imgGlobal/social/instagram.svg" alt="instagram"></a></div>
                 </div>
             </div>
 
